@@ -12,3 +12,4 @@ C:\Users\Nerva\Documents\Code\OS\obj\Debug\net8.0\refint\OS.dll
 C:\Users\Nerva\Documents\Code\OS\obj\Debug\net8.0\OS.pdb
 C:\Users\Nerva\Documents\Code\OS\obj\Debug\net8.0\OS.genruntimeconfig.cache
 C:\Users\Nerva\Documents\Code\OS\obj\Debug\net8.0\ref\OS.dll
+C:\Users\Nerva\Documents\Code\OS\obj\Debug\net8.0\OS.sourcelink.json

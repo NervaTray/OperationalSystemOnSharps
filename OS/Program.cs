@@ -8,13 +8,25 @@ namespace OSApp
     {
         static void Main(string[] args)
         {
-            Drives();
             while (true)
             {
-                Console.WriteLine("Выберите режим работы [0-1]:\n0. Выход из программы.\nВывод Информации о дисках");
+                Console.Write("0. Выход из программы.\n1. Вывод Информации о дисках\n\nВыберите режим работы [0-1]: ");
                 string mode = Console.ReadLine();
 
-
+                switch(mode)
+                {
+                    case "0":
+                        Console.WriteLine("Конец программы!");
+                        return;
+                    case "1":
+                        Drives();
+                        break;
+                    default:
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Такой опции не существует. Повторите попытку.\n");
+                        Console.ResetColor();
+                        break;
+                }
             }
         }
 
