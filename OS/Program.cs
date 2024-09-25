@@ -2,12 +2,16 @@
 using System.ComponentModel.Design;
 using System.IO;
 
+using FDOS;
+
 namespace OSApp
 {
     class Program 
     {
         static void Main(string[] args)
         {
+            FileDirSystem fileDir = new FileDirSystem();
+            
             while (true)
             {
                 Console.Write("0. Выход из программы.\n1. Вывод Информации о дисках\n\nВыберите режим работы [0-1]: ");
@@ -20,6 +24,9 @@ namespace OSApp
                         return;
                     case "1":
                         Drives();
+                        break;
+                    case "2":
+                        fileDir.MakeDir("teest", "C://Users/Nerva/");
                         break;
                     default:
                         Console.ForegroundColor = ConsoleColor.Red;
